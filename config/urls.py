@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
+
 from pybo.views import base_views
 
 urlpatterns = [
@@ -9,3 +10,6 @@ urlpatterns = [
     path('common/', include('common.urls')),
     path('', base_views.index, name='index'), 
 ]
+
+handler404 = 'common.views.page_not_found'
+
