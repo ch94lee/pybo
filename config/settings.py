@@ -25,11 +25,9 @@ SECRET_KEY = 'django-insecure-qlb-l3j86=q!4#h8&!1yq_+*-n^ocqax#0yc0xao2$safhj33k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS =['52.79.158.42']
 
 # Application definition
-
 INSTALLED_APPS = [
     'common.apps.CommonConfig',
     'pybo.apps.PyboConfig',
