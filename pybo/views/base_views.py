@@ -4,8 +4,10 @@ from django.core.paginator import Paginator
 from django.db.models import Q
 
 
+
 # Create your views here.
 def index(request):
+    3/0
     page = request.GET.get('page', '1') #페이지
     kw = request.GET.get('kw', '')  # 검색어
     #작성일자 역순으로 조회 리스트 저장
