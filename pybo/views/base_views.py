@@ -10,6 +10,7 @@ logger = logging.getLogger('pybo')
 # Create your views here.
 def index(request):
     #3/0
+    ##############
     logger.info("INFO 레벨로 출력")
     page = request.GET.get('page', '1') #페이지
     kw = request.GET.get('kw', '')  # 검색어
